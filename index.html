@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan AJAX 1</title>
+    <style>
+        .section{
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .btn{
+            background: #feca57;
+            border: 1px solid #c8d6e5;
+            border-radius: 3px;
+            padding: 0 20px;
+        }
+
+        .btn:hover{
+            background: #ff9f43;
+        }
+
+        .card{
+            position: relative;
+            height: fit-content;
+            width: fit-content;
+            border-radius: 10px;
+            text-align: center;
+            padding: 0 auto;
+            margin: 0 auto;
+            background-color: #ff9f43;
+        }
+
+        .number{
+            padding-top: 5px;
+        }
+
+        .type{
+            padding-bottom: 5px;
+        }
+
+        .number,.name,.type{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 15px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+        <h2>Get Pikachu</h2>
+        <button onclick="fetchPikachu()" type="button" class="btn">Get!</button>
+
+        <div id="card" class="card">
+            <p id="number" class="number"></p>
+            <p id="name" class="name"></p>
+            <img src="" alt="" id="image">
+            <p id="type" class="type"></p>
+        </div>
+
+    </div>
+</body>
+
+<script src="Script_Ajax_1.js"></script>
+</html>
